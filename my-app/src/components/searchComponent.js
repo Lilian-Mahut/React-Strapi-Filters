@@ -1,3 +1,12 @@
+import React, { useState, useEffect } from "react"
+import { useDispatch, useSelector } from "react-redux"
+
+import "./searchComponent.scss"
+
+const searchComponent = () => {
+    useEffect(() => {})
+    return (
+
         <p>Type d'événements</p>
         <select name="typeOfEvent" id="type-event-select">
             <option value="">--Choisir un type d'event</option>
@@ -24,7 +33,6 @@
             <label for="voyage">Voyage</label>
         </div>
 
-        {/* Filtres places disponibles */}
         <p>Places disponibles</p>
         <select name="places" id="places">
         <option value="all">Toutes</option>
@@ -32,6 +40,7 @@
         <option value="one">1</option>
         <option value="empty">Vide</option>
         </select>
-
+    )
+}
                 
 export default searchComponent
