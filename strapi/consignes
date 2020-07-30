@@ -1,0 +1,61 @@
+Utilisation de STRAPI pour créer une API que l'on va consummer.
+
+Librairie : 
+
+- Book 
+  - id
+  - nom
+  - auteur
+  - date de publication
+  - resume
+  - genre
+  - Langue
+  - dispo : True / False
+ 
+- Type :
+   - id
+   - nom
+
+- Author : 
+   - id
+   - prénom
+   - nom
+   - date de naissance
+   
+- User : 
+   - id
+   - prenom
+   - email
+   - nb_books_borrowed 
+   - ...
+
+- user_borrows_books : 
+   - id
+   - id_user
+   - id_book
+   - date
+   
+
+Quelques consignes :
+
+- Un livre doit être rendu maximum 15 jours après son emprunt
+- Une personne ne peut pas emprunter plus de 5 livres à la fois
+
+Sujet : Front au choix
+
+- Créer une API nous permettant de gérer cette Librairie avec différents endoints consummable par un front.
+
+Nb pages :
+
+Home :
+    - Liste tous les livres avec leurs informations
+    - Nous pouvons filtrer par genre
+    - Nous pouvons filtrer par date de publication
+    - Nous pouvons filtrer par nom de livre
+    - Nous pouvons filtrer par autheur
+    - On peut cliquer sur un livre pour l'emprunter
+
+Page emprunt : 
+    - Détails du livre emprunté
+    - Emprunter un livre 
+    - Les écrans de validation d'emprunts

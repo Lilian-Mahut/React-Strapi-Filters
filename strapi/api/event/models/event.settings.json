@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "name": "Event"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Ouverte": {
+      "type": "boolean"
+    },
+    "Date": {
+      "type": "datetime"
+    },
+    "Nom": {
+      "type": "string"
+    },
+    "Participants": {
+      "type": "integer"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "type_event": {
+      "model": "type-events"
+    }
+  }
+}

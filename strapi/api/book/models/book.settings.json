@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "books",
+  "info": {
+    "name": "Book"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "available": {
+      "type": "boolean"
+    },
+    "language": {
+      "type": "string"
+    },
+    "genre": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "publication_date": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    }
+  }
+}
