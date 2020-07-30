@@ -18,7 +18,7 @@
     "Nom": {
       "type": "string"
     },
-    "Participants": {
+    "Places": {
       "type": "integer"
     },
     "Description": {
@@ -26,6 +26,14 @@
     },
     "type_event": {
       "model": "type-events"
+    },
+    "participants": {
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "organisateur": {
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

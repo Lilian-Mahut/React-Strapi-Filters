@@ -57,8 +57,11 @@
       "type": "integer"
     },
     "user_borrows_books": {
-      "via": "id_user",
-      "collection": "user-borrows-books"
+      "collection": "user-borrows-books",
+      "via": "id_user"
+    },
+    "organisateur": {
+      "model": "event"
     }
   }
 }
