@@ -7,6 +7,7 @@ function App() {
 		<div className="App">
 			<header className="App-header">
 				{/* Filtres type d'évènements */}
+				<p>Type d'événements</p>
 				<select name="typeOfEvent" id="type-event-select">
 					<option value="">--Choisir un type d'event</option>
 					<option value="sport">Sport</option>
@@ -14,14 +15,32 @@ function App() {
 					<option value="manger">Manger</option>
 					<option value="voyage">Voyage</option>
 				</select>
-
-				<button>SPORT</button>
-				<button>BOIRE</button>
-				<button>MANGER</button>
-				<button>VOYAGE</button>
+				<p>Choix événéments</p>
+				<div>
+					<input type="checkbox" id="sport" name="sport" />
+					<label for="sport">Sport</label>
+				</div>
+				<div>
+					<input type="checkbox" id="boire" name="boire" />
+					<label for="boire">Boire</label>
+				</div>
+				<div>
+					<input type="checkbox" id="manger" name="manger" />
+					<label for="manger">Manger</label>
+				</div>
+				<div>
+					<input type="checkbox" id="voyage" name="voyage" />
+					<label for="voyage">Voyage</label>
+				</div>
 
 				{/* Filtres places disponibles */}
-				<select name="typeOfEvent" id="type-event-select"></select>
+				<p>Places disponibles</p>
+				<select name="places" id="places">
+					<option value="all">Toutes</option>
+					<option value="twoMore">2 et +</option>
+					<option value="one">1</option>
+					<option value="empty">Vide</option>
+				</select>
 			</header>
 		</div>
 	);
