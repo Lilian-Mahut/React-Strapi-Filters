@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_new_test_composants",
+  "info": {
+    "name": "Test-composant",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "date": {
+      "type": "datetime"
+    },
+    "nom": {
+      "type": "string"
+    },
+    "participants": {
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}
